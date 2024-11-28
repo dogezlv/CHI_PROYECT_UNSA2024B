@@ -1064,19 +1064,50 @@ padding-bottom: 40px;
   letter-spacing: 1px;
 }
 .blog-text p{
-    font-size: 18px;
+    font-size: 17px;
     opacity: .9;
     font-weight: 400;
-    height: 80%;
+    height: 65%;
     padding: 30px;
     letter-spacing: 1px;
   }
+
+.blog-buttons {
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: whitesmoke;
+    background-color: #c70039;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff5733;
+}
+
 .blogs:hover .img{
       transform: translateY(-70%);
   }
 .blogs:hover .blog-text{
     transform: translateY(-70%);
 }
+.blogs:hover .blog-buttons{
+    transform: translateY(-70%);
+}
+
 .blogs a{
     text-decoration: none;
     color: whitesmoke;
@@ -2457,7 +2488,7 @@ for tabs and large phones
     .blog-text h3{
       font-size: 28px;
       font-weight: 500;
-      height: 20%;
+      height: 15%;
       padding: 20px;
       letter-spacing: 1px;
     }
@@ -2465,14 +2496,27 @@ for tabs and large phones
         font-size: 18px;
         opacity: .9;
         font-weight: 400;
-        height: 80%;
+        height: 60%;
         padding: 30px;
         letter-spacing: 1px;
       }
+    .blog-buttons {
+        height: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        padding: 10px;
+        margin-top: 15px;
+    }
+    
     .blogs:hover .img{
           transform: translateY(-70%);
       }
     .blogs:hover .blog-text{
+        transform: translateY(-70%);
+    }
+    .blogs:hover .blog-buttons{
         transform: translateY(-70%);
     }
     .contact-header{
