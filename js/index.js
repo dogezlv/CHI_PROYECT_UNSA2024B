@@ -11,20 +11,18 @@ $(window).on('load',function(){
   gsap.to('#videogame', 0, { display: "none" });
   gsap.to('#final-project', 0, { display: "none" });
 })
-
-// $(function(){
-//   $('.color-panel').on("click",function(e) {
-//     e.preventDefault();
-//     $('.color-changer').toggleClass('color-changer-active');
-// });
-// $('.colors a').on("click",function(e) {
-//   e.preventDefault();
-//   var attr = $(this).attr("title");
-//   console.log(attr);
-//   $('head').append('<link rel="stylesheet" href="css/'+attr+'.css">');
-// });
-// });
-
+$(function(){
+  $('.color-panel').on("click",function(e) {
+    e.preventDefault();
+    $('.color-changer').toggleClass('color-changer-active');
+});
+$('.colors a').on("click",function(e) {
+  e.preventDefault();
+  var attr = $(this).attr("title");
+  console.log(attr);
+  $('head').append('<link rel="stylesheet" href="css/'+attr+'.css">');
+});
+});
 $(function(){
      $('.menubar').on('click',function(){
          gsap.to('#navigation-content',.6,{y:0});
@@ -178,3 +176,11 @@ $(function(){
   $('.navigation-close').hover(cursorhover,cursor);
 
 })
+
+const portfolioTitles = document.querySelectorAll('.portfolio');
+
+portfolioTitles.forEach(title => {
+    title.addEventListener('click', () => {
+        title.classList.add('visited');
+    });
+});
