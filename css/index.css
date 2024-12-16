@@ -14,11 +14,11 @@
 }
 ::-webkit-scrollbar{
     width: 4px;
-    color:#c70039;
+    color:#ff6600;
     transition: all .4s ease;
 }
 ::-webkit-scrollbar-thumb {
-    background: #c70039; 
+    background: #ff6600; 
     border-radius: 4px;
     width: 4px;
     transition: all .4s ease;
@@ -57,6 +57,7 @@ input[type=number] {
       width: 100%;
   }
 body{
+    /*filter: grayscale(100%);*/
     user-select: none;
     height: auto;
     overflow-x: hidden;
@@ -204,6 +205,7 @@ body{
     z-index: 2;
     cursor: pointer;
     transition: all .4s ease;
+    transform: rotate(-90deg);
 }
 .logo img:hover{
     opacity: 1;
@@ -261,9 +263,9 @@ body{
 }
 .header-content .firstline{
     z-index: 2;
-    font-weight:700;
+    font-weight:1000;
     font-family: poppins;
-    font-size: 65px;
+    font-size: 130px;
 }
 .header-content .secondline{
     z-index: 2;
@@ -394,7 +396,7 @@ body{
 #breaker{
     height: 100vh;
     width: 200%;
-    background-color: #c70039;
+    background-color: #ff6600;
     opacity: 1;
     animation: breakeranimate 2s linear;
     display: none;
@@ -414,7 +416,8 @@ body{
     100%{ transform : translateX(100%) }
 }
 .color{
-    color: #c70039;
+    color: #ff6600;
+    font-weight: bold; /* Aumentar grosor de enlaces */
     transition: all .4s ease;
 }
 #about{
@@ -516,7 +519,7 @@ body{
     font-family: aileron;
     font-weight: 400;
     font-size: 35px;
-    color: #c70039;
+    color: #ff6600;
     transition: all .4s ease;
 }
 .cv {
@@ -527,7 +530,7 @@ body{
     border:none;
     padding: 15px 30px;
     color: whitesmoke;
-    background: #c70039;
+    background: #ff6600;
     outline: none;
     font-size:20px;
     font-family: aileron;
@@ -603,14 +606,14 @@ body{
     margin: 20px;
     border-radius: 30%;
     padding: 10px;
-    border: 0px solid #c70039;
-    background: #c70039;
-    box-shadow:0px 0px 0px 0px #c70039 ;
+    border: 0px solid #ff6600;
+    background: #ff6600;
+    box-shadow:0px 0px 0px 0px #ff6600 ;
     height:150px;
     transition: all .8s ease;
 }
 .service:hover .service-img img{
-    box-shadow:0px 0px 0px 400px #c70039 ;
+    box-shadow:0px 0px 0px 400px #ff6600 ;
 }
 .service-description{
     font-family: poppins;
@@ -696,7 +699,7 @@ body{
     transition: all .4s ease;
     width:95%;
     border-radius: 10px;
-    background: #c70039;
+    background: #ff6600;
 }
 .js-progress{
     position: absolute;
@@ -710,7 +713,7 @@ body{
     transition: all .4s ease;
     width:90%;
     border-radius: 10px;
-    background: #c70039;
+    background: #ff6600;
 }
 .adobe-progress{
     position: absolute;
@@ -723,7 +726,7 @@ body{
     transition: all .4s ease;
     width:83%;
     border-radius: 10px;
-    background: #c70039;
+    background: #ff6600;
 }
 .php-progress{
     position: absolute;
@@ -735,7 +738,7 @@ body{
     justify-content: center;
     width:85%;
     border-radius: 10px;
-    background: #c70039;
+    background: #ff6600;
     transition: all .4s ease;
 }
 .jquery-progress{
@@ -749,7 +752,7 @@ body{
     transition: all .4s ease;
     width:94%;
     border-radius: 10px;
-    background: #c70039;
+    background: #ff6600;
 }
 .seo-progress{
     position: absolute;
@@ -762,7 +765,7 @@ body{
     width:84%;
     border-radius: 10px;
     transition: all .4s ease;
-    background: #c70039;
+    background: #ff6600;
 }
 .portfolio-header{
     height: auto;
@@ -821,7 +824,7 @@ padding-bottom: 40px;
     font-family: poppins;
     font-weight: 200;
     padding: 20px;
-    color: #c70039;
+    color: #ff6600;
     transition: all .4s ease;
 }
 .portfolio-text p{
@@ -841,7 +844,7 @@ padding-bottom: 40px;
     font-style: normal;
 }
 .highlight {
-    color: #c70039; 
+    color: #ff6600; 
     font-weight: bold; 
 }
 
@@ -879,11 +882,11 @@ padding-bottom: 40px;
     font-weight: 200;
     padding: 10px 20px;
     background:transparent;
-    color:#c70039;
+    color:#ff6600;
     transition: all .4s ease;
     outline: none;
     margin: 20px;
-    border: 1.5px solid #c70039;
+    border: 1.5px solid #ff6600;
     cursor: pointer;
     overflow: hidden;
     position: relative;
@@ -898,7 +901,7 @@ padding-bottom: 40px;
     top: 0;
     left: 0;
     z-index: 3;
-    background: #c70039;
+    background: #ff6600;
     transition: all .7s ease;
 }
 .portfolio-text button:hover{
@@ -914,6 +917,7 @@ padding-bottom: 40px;
     width: 120%;
 }
 .button{
+
     text-align: center;
 }
     .portfolio-image img{
@@ -929,7 +933,7 @@ padding-bottom: 40px;
     content: "";
     height: 100%;
     width: 100%;
-    background: #c70039;
+    background: #ff6600;
     opacity: .1;
     top: 0;
     left: 0;
@@ -1030,8 +1034,8 @@ padding-bottom: 40px;
     position: absolute;
     left: 0;
     bottom: 0;
-    background: #c70039;
-    color: whitesmoke;
+    background: #ff6600;
+    color: rgb(0, 0, 0);
     font-size: 18px;
     text-align: center;
     font-weight: 400;
@@ -1087,7 +1091,7 @@ padding-bottom: 40px;
     font-size: 16px;
     font-weight: 500;
     color: whitesmoke;
-    background-color: #c70039;
+    background-color: #ff6600;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -1369,7 +1373,7 @@ form button:hover{
     width: 100%;
 }
 .color-red{
-    background: #c70039;
+    background: #ff6600;
 }
 .color-purple{
     background: #481380;
@@ -1476,7 +1480,7 @@ For devices with smaller width like mobile phone
     #breaker{
         height: 50vh;
         width: 200%;
-        background-color: #c70039;
+        background-color: #ff6600;
         opacity: 1;
         animation: breakeranimate 2s linear;
         display: none;
@@ -1644,7 +1648,7 @@ For devices with smaller width like mobile phone
                 display: none;
             }
             .service:hover .service-img img{
-                box-shadow:0px 0px 0px 0px #c70039 ;
+                box-shadow:0px 0px 0px 0px #ff6600 ;
             }
             .portfolio-image img{
                 height: 300px;
@@ -1931,7 +1935,7 @@ for tabs and large phones
     #breaker{
         height: 50vh;
         width: 200%;
-        background-color: #c70039;
+        background-color: #ff6600;
         opacity: 1;
         animation: breakeranimate 2s linear;
         display: none;
@@ -2115,7 +2119,7 @@ for tabs and large phones
                 display: none;
             }
             .service:hover .service-img img{
-                box-shadow:0px 0px 0px 0px #c70039 ;
+                box-shadow:0px 0px 0px 0px #ff6600 ;
             }
             .portfolio-image img{
                 height: 380px;
@@ -2649,4 +2653,46 @@ for tabs and large phones
         border-radius: 8px;
         transition: all .4s ease;
     }
+}
+
+a {
+    color: #004080; /* Azul oscuro accesible */}
+a:hover {
+    color: #ff6600; /* Naranja brillante para alta visibilidad */
+}
+
+/* Botones con mayor contraste */
+.btn {
+    background-color: #004080; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+    border: 2px solid #002040; /* Borde visible */
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #ff6600;
+    border-color: #cc5500;
+}
+
+.navigation-links a {
+    font-weight: bold; /* Aumentar grosor de enlaces */
+}
+
+.primary-action {
+    background-color: #ff5722; /* Color llamativo */
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.primary-action:hover {
+    background-color: #e64a19;
+}
+.portfolio .portfolio-title.visited {
+    color: rgb(255, 0, 0);
+    text-decoration: line-through;
 }
