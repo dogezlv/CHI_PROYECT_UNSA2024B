@@ -14,7 +14,34 @@
     <link rel="stylesheet" href="css/index.css">
     <!--main css file-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
+<style>
+    #ATprogressbar{
+      position: fixed;
+      bottom: 26px;
+      right: 30px;
+      width:70px;
+      height: 70px;
+      border-radius: 50%;
+      z-index: 99;
+      display: grid;
+      place-items: center;
+      background:darkcyan;
+    }
+    #progressValue{
+      background:rgba(0,0,0,0.5);
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;color: #ffffff;
+      display: grid;
+      place-items: center;font-size: 18px;
+      font-family:poppins;  
+    }
+    
+    </style>
+
+
 <body>
     <!--contains all the div-->
     <div id="all">
@@ -55,7 +82,7 @@
                 <img src="images/gear.png" alt="">
             </div>
             <div class="color-selector">
-                <div class="heading">Colores daltónicos</div>
+                <div class="heading">Colores para daltónicos</div>
                 <div class="colors">
                     <ul >
                     <li>
@@ -113,7 +140,7 @@
                     <img src="images/gear.png" alt="">
                 </div>
                 <div class="color-selector">
-                    <div class="heading">Colores daltónicos</div>
+                    <div class="heading">Colores para daltónicos</div>
                     <div class="colors">
                         <ul >
                         <li>
@@ -190,7 +217,7 @@
                     <img src="images/gear.png" alt="">
                 </div>
                 <div class="color-selector">
-                    <div class="heading">Colores daltónicos</div>
+                    <div class="heading">Colores para daltónicos</div>
                     <div class="colors">
                         <ul >
                         <li>
@@ -298,7 +325,7 @@
                     <img src="images/gear.png" alt="">
                 </div>
                 <div class="color-selector">
-                    <div class="heading">Colores daltónicos</div>
+                    <div class="heading">Colores para daltónicos</div>
                     <div class="colors">
                         <ul >
                         <li>
@@ -321,93 +348,98 @@
                 <span class ="header-caption"> 
                     Una plataforma gamificada que transforma la distracción en <span class="color">atención activa</span> y refuerza el aprendizaje con <span class="color"><strong>puntos que hacen la diferencia.</strong></span>
                 </span>
-            </div>
-            <div class="blog-content">
-                <div class="blogs">
-                    <a href="#">
-                    <div class="img">
-                    <img src="images/propuesta.PNG" alt="propuesta">
-                    <div class="blog-date">24/10/2024</div>
+                <div class="wrapper">
+                    <div class="center-line">
+                      <a href="#" class="scroll-icon"><i class="fas fa-caret-up"></i></a>
                     </div>
-                    <div class="blog-text">
-                        <h3>Propuesta de Proyecto</h3>
-                        <p>
-                            Identificamos la problemática y contexto para definir un público específico y objetivos para BrainDash.
-                        </p>
-                        <!-- ppts y anexos -->
-                        <div class="blog-buttons">
-                            <a href="https://drive.google.com/file/d/1B7K-SNOSC8U6SOuk2qHnB-AMbIvwOJXT/view" target="_blank">
-                                <button class="btn btn-ppt">Documento</button>
-                            </a>
+                    <div class="row row-1">
+                      <section>
+                        <i class="icon fas fa-home"></i>
+                        <div class="details">
+                          <span class="title">Propuesta de Proyecto</span>
+                          <span>24/10/2024</span>
                         </div>
-                    </div></a>
-                </div>
-                <div class="blogs">
-                    <a href="#">
-                    <div class="img">
-                    <img src="images/need.PNG" alt="needfinding">
-                    <div class="blog-date">14/11/2024</div>
-                    </div>
-                    <div class="blog-text">
-                        <h3>Busqueda de necesidades</h3>
-                        <p>
-                            Nos pusimos en contacto con diversas personas para conversar sobre las distracciones que enfrentan en su día 
-                            a día en clases y obtuvimos información valiosa que se convirtió en la base de BrainDash.
-                        </p>
-                        <!-- ppts y anexos -->
-                        <div class="blog-buttons">
-                            <a href="https://www.canva.com/design/DAGVJSJd_4E/aNSPm_FmqHI9kcH79tO-Mw/view?utm_content=DAGVJSJd_4E&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank">
-                                <button class="btn btn-ppt">PPT</button>
-                            </a>
-                            <a href="https://drive.google.com/drive/folders/1vj74n0G2u6loBtG6kmq1qgntkFKKbqKU?usp=sharing" target="_blank">
-                                <button class="btn btn-anexos">Anexos</button>
-                            </a>
+                        <p>Identificamos la problemática y contexto para definir un público específico y objetivos para BrainDash.</p>
+                        <div class="botton-container">
+                        <div class="bottom">
+                            <a href="https://drive.google.com/file/d/1B7K-SNOSC8U6SOuk2qHnB-AMbIvwOJXT/view" target="_blank">Documento</a>
+                          </div>
                         </div>
-                    </div></a>
-                </div>       
-                <div class="blogs">
-                    <a href="#">
-                    <div class="img">
-                        <img src="images/story.PNG" alt="storyboard">
-                        <div class="blog-date">21/11/2024</div>
+                      </section>
                     </div>
-                    <div class="blog-text">
-                        <h3>Storyboard</h3>
-                        <p>Nuestra visión de BrainDash empezó a tomar forma cuando imaginamos cómo las personas podrían 
+                    <div class="row row-2">
+                        <section>
+                          <i class="icon fas fa-star"></i>
+                          <div class="details">
+                            <span class="title">Busqueda de necesidades</span>
+                            <span>14/11/2024</span>
+                          </div>
+                          <p>Nos pusimos en contacto con diversas personas para conversar sobre las distracciones que enfrentan en su día 
+                            a día en clases y obtuvimos información valiosa que se convirtió en la base de BrainDash.</p>
+                            <div class="botton-container">
+                                <div class="bottom">
+                                    <a href="https://www.canva.com/design/DAGVJSJd_4E/aNSPm_FmqHI9kcH79tO-Mw/view?utm_content=DAGVJSJd_4E&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank">PPT</a>
+                                  </div>
+                                  <div class="bottom">
+                                    <a href="https://drive.google.com/drive/folders/1vj74n0G2u6loBtG6kmq1qgntkFKKbqKU?usp=sharing" target="_blank">Anexos</a>
+                                  </div>
+                                </div>
+                        </section>
+                      </div>
+                      <div class="row row-1">
+                        <section>
+                          <i class="icon fas fa-rocket"></i>
+                          <div class="details">
+                            <span class="title">Storyboard</span>
+                            <span>21/11/2024</span>
+                          </div>
+                          <p>Nuestra visión de BrainDash empezó a tomar forma cuando imaginamos cómo las personas podrían 
                             mejorar sus habilidades cognitivas a través de una interfaz de usuario llamativa.</p>
-                            <!-- ppts y anexos -->
-                            <div class="blog-buttons">
-                                <a href="https://www.canva.com/design/DAGXFM45bTU/NYrXyDJh-R89HS58_u7oAg/view?utm_content=DAGXFM45bTU&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank">
-                                    <button class="btn btn-ppt">PPT</button>
-                                </a>
-                                <a href="https://drive.google.com/drive/folders/1yAKVWtrNU1oM-vTV_S1yt6R8idDMQWCj?usp=sharing" target="_blank">
-                                    <button class="btn btn-anexos">Anexos</button>
-                                </a>
+                          <div class="botton-container">
+                            <div class="bottom">
+                                <a href="https://www.canva.com/design/DAGXFM45bTU/NYrXyDJh-R89HS58_u7oAg/view?utm_content=DAGXFM45bTU&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank">PPT</a>
+                              </div>
+                              <div class="bottom">
+                                <a href="https://drive.google.com/drive/folders/1yAKVWtrNU1oM-vTV_S1yt6R8idDMQWCj?usp=sharing" target="_blank">Anexos</a>
+                              </div>
                             </div>
-                    </div></a>
-                </div>
-                <div class="blogs">
-                    <a href="#">
-                    <div class="img">
-                        <img src="images/mockup.PNG" alt="mockups">
-                        <div class="blog-date">28/11/2024</div>
-                    </div>
-                    <div class="blog-text">
-                        <h3>MOCKUPS</h3>
-                        <p>De nuestras mentes a la página, las pantallas interactivas empezaron a dar 
+                        </section>
+                      </div>
+                      <div class="row row-2">
+                        <section>
+                          <i class="icon fas fa-globe"></i>
+                          <div class="details">
+                            <span class="title">MOCKUPS</span>
+                            <span>28/11/2024</span>
+                          </div>
+                          <p>De nuestras mentes a la página, las pantallas interactivas empezaron a dar 
                             vida a BrainDash con el feedback del usuario.</p>
-                            <!-- ppts y anexos -->
-                            <div class="blog-buttons">
-                                <a href="https://www.canva.com/design/DAGXdBr_I_o/46pA4FgUc-qzYqDwuU8Phw/view?utm_content=DAGXdBr_I_o&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank">
-                                    <button class="btn btn-ppt">PPT</button>
-                                </a>
-                                <a href="https://drive.google.com/drive/folders/1RqjqdET4Rc5XsqcXDIj0E7QN2czlp01K?usp=sharing" target="_blank">
-                                    <button class="btn btn-anexos">Anexos</button>
-                                </a>
+                          <div class="botton-container">
+                            <div class="bottom">
+                                <a href="https://www.canva.com/design/DAGXdBr_I_o/46pA4FgUc-qzYqDwuU8Phw/view?utm_content=DAGXdBr_I_o&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank">PPT</a>
+                              </div>
+                              <div class="bottom">
+                                <a href="https://drive.google.com/drive/folders/1RqjqdET4Rc5XsqcXDIj0E7QN2czlp01K?usp=sharing" target="_blank">Anexos</a>
+                              </div>
                             </div>
-                    </div></a>
-                </div>  
-            </div>
+                        </section>
+                      </div>
+                      <div class="row row-1">
+                        <section>
+                          <i class="icon fas fa-paper-plane"></i>
+                          <div class="details">
+                            <span class="title">Prototipo de alta fidelidad</span>
+                            <span>14/11/2024</span>
+                          </div>
+                          <p>Nuestros diferentes tipos de personas (usuarios) probaron por primera vez nuestro prototipo de alta fidelidad, y recibimos el feedback de cada uno de ellos.</p>
+                          <div class="botton-container">
+                            <div class="bottom">
+                                <a href="https://drive.google.com/drive/folders/1vj74n0G2u6loBtG6kmq1qgntkFKKbqKU?usp=sharing" target="_blank">Anexos</a>
+                              </div>
+                            </div>
+                        </section>
+                      </div>
+                    </div>
                <!--copyright-section You Can Remove After Downloading-->
                <div class="footer">
                 <div class="footer-text">
@@ -418,6 +450,27 @@
         </div>
         <!--final-project end-->
     </div>
+    <div id ='ATprogressbar' onclick="window.scrollTo(0,0)">
+        <span id ='progressValue'></span>
+      </div>
+      
+      <script>
+        let ATscrollProgress = () =>{
+      let scrollProgress = document.getElementById("ATprogressbar");
+      let progressValue = document.getElementById("progressValue");
+      let pos = document.documentElement.scrollTop;
+      let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      let scrollvalue = Math.round( pos * 100 / calcHeight);
+      scrollProgress.style.background = ` conic-gradient(#739c9c ${scrollvalue}%, #0b4f52 ${scrollvalue}%)`;
+      progressValue.textContent = `${scrollvalue}%`;
+      
+      
+        }
+        window.onscroll= ATscrollProgress;
+        window.onload =ATscrollProgress;
+      </script>
+
+
     <!--all the divisions-->
     <script src="js/jquery.min.js"></script>
     <script src="js/particles.js"></script>
