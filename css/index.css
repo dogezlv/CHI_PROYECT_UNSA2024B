@@ -12,6 +12,52 @@
     margin: 0%;
     box-sizing: border-box;
 }
+
+.portfolio-text button{
+    font-size: 16px;
+    opacity: .8;
+    font-family: poppins;
+    font-weight: 200;
+    padding: 10px 20px;
+    background:transparent;
+    color:whitesmoke;
+    transition: all .4s ease;
+    outline: none;
+    margin: 20px;
+    border: 1.5px solid #001380;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: all .4s ease;
+    background-color: #004080;
+}
+.portfolio-text button::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 200%;
+    transform: rotate(-15deg) translateY(-20px);
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background: #ff6600;
+    border: 1.5px solid #ff6600;
+    transition: all .7s ease;
+}
+.portfolio-text button:hover{
+    opacity: 1;
+    color:whitesmoke;
+    border: 1.5px solid #ff6600;
+}
+ button:hover .index{
+     position: relative;
+    z-index: 4;
+}
+.portfolio-text button:hover::before{
+    opacity: 1;
+    width: 120%;
+}
+
 ::-webkit-scrollbar{
     width: 4px;
     color:#ff6600;
